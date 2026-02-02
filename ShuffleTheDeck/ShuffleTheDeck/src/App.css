@@ -1,0 +1,148 @@
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    transform: translateY(-100%);
+    will-change: transform;
+    z-index: 2;
+}
+
+nav > div{
+    flex: 1;
+}
+
+nav .site-info{
+    text-align: center;
+}
+
+nav .menu{
+    text-align: right;
+}
+
+nav p{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    padding: 2rem;
+    background-color: #6c9a8b;
+    overflow: hidden;
+}
+
+.intro-cards, .outer-cards{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.card{
+    position: absolute;
+    width: 100px;
+    height: 138.09px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+
+.outer-cards .card:nth-child(2),
+.outer-cards .card:nth-child(3){
+    transform-origin: right bottom;
+}
+
+.outer-cards .card:nth-child(4),
+.outer-cards .card:nth-child(5){
+    transform-origin: left bottom;
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background-color: #fbf7f4;
+    color: #0e0e0e;
+    transform: rotateY(180deg);
+}
+
+.card-front p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.hero-footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-footer .logo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(0.1);
+    transform-origin: bottom;
+    will-change: transform;
+}
+
+.hero-footer .logo img{
+    position: relative;
+    transform: translateY(125%);
+}
+
+.card {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@media(max-width: 1000px){
+    nav{
+        padding: 1rem;
+        gap: 0;
+    }
+
+    .card{
+        width: 60px;
+        height: 83.44px;
+    }
+
+    .card-front{
+        padding: 0.5rem;
+    }
+
+    .hero-footer{
+        padding: 1rem;
+    }
+
+    .hero-footer .logo{
+        transform: scale(0.5);
+    }
+}
