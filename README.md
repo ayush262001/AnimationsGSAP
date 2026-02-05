@@ -24,3 +24,23 @@ https://landingpagereveal1.vercel.app/
 
 ## 🎥 Loom Walkthrough
 https://www.loom.com/share/e7072181e6f04ad0a5d8a0db5905c195
+
+# UI-3
+
+A GSAP-based landing page that reveals the content with the timeline. This allows you play with words and moving sections at the same time.
+
+## 🖼 UI Preview
+![UI Preview](Images/Day3.png)
+
+## 🔗 Live Demo
+https://shufflethedeckheroanimation.vercel.app/
+
+# UI-4
+
+A GSAP-based reveal animation which reveals section and text one by one based on timeline.
+
+## 🖼 UI Preview
+![UI Preview](Images/Day4.png)
+
+## 🔗 Live Demo
+https://gsap-animation-reveal-day-4.vercel.app/
